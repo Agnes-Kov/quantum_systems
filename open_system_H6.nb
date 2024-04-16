@@ -1,0 +1,418 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15743,        408]
+NotebookOptionsPosition[     15013,        388]
+NotebookOutlinePosition[     15463,        405]
+CellTagsIndexPosition[     15420,        402]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "\[Omega]", "}"}], ",", 
+   RowBox[{"Column", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"Plot3D", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Re", "[", 
+            RowBox[{"-", 
+             SqrtBox[
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], "+", 
+               SuperscriptBox["\[Omega]", "2"], "+", 
+               RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+               SuperscriptBox["\[Gamma]", "2"]}]]}], "]"}], ",", " ", 
+           RowBox[{"Re", "[", 
+            SqrtBox[
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], "+", 
+              SuperscriptBox["\[Omega]", "2"], "+", 
+              RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+              SuperscriptBox["\[Gamma]", "2"]}]], "]"}], ",", " ", 
+           RowBox[{"Im", "[", 
+            RowBox[{"-", 
+             SqrtBox[
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], "+", 
+               SuperscriptBox["\[Omega]", "2"], "+", 
+               RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+               SuperscriptBox["\[Gamma]", "2"]}]]}], "]"}], ",", " ", 
+           RowBox[{"Im", "[", 
+            SqrtBox[
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], "+", 
+              SuperscriptBox["\[Omega]", "2"], "+", 
+              RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+              SuperscriptBox["\[Gamma]", "2"]}]], "]"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Lambda]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Gamma]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"ImageSize", "->", "Medium"}], ",", " ", 
+         RowBox[{"PlotRange", "->", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", " ", "10"}], "}"}]}], ",", " ", 
+         RowBox[{"AxesLabel", "->", 
+          RowBox[{"{", 
+           RowBox[{"\[Lambda]", ",", "\[Gamma]", ",", "\"\<E\>\""}], "}"}]}], 
+         ",", " ", 
+         RowBox[{
+         "PlotLabel", "->", 
+          "\"\<Combined Plot of 4x4 Open System Hamiltonian 6, omega constant\
+\>\""}]}], "]"}]}], ",", " ", 
+      RowBox[{"Slider", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", "\[Omega]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "10"}], "}"}], ",", " ", 
+        RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "]"}]}], " ", 
+     "}"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "\[Omega]", "}"}], ",", 
+   RowBox[{"Column", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"Plot3D", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Re", "[", 
+            RowBox[{"-", 
+             SqrtBox[
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], "+", 
+               SuperscriptBox["\[Omega]", "2"], "+", 
+               RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+               SuperscriptBox["\[Gamma]", "2"]}]]}], "]"}], ",", " ", 
+           RowBox[{"Re", "[", 
+            SqrtBox[
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], "+", 
+              SuperscriptBox["\[Omega]", "2"], "+", 
+              RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+              SuperscriptBox["\[Gamma]", "2"]}]], "]"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Lambda]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Gamma]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"ImageSize", "->", "Medium"}], ",", " ", 
+         RowBox[{"PlotRange", "->", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", " ", "10"}], "}"}]}], ",", " ", 
+         RowBox[{"AxesLabel", "->", 
+          RowBox[{"{", 
+           RowBox[{"\[Lambda]", ",", "\[Gamma]", ",", "\"\<E\>\""}], "}"}]}], 
+         ",", " ", 
+         RowBox[{
+         "PlotLabel", "->", 
+          "\"\<Real Plot of 4x4 Open System Hamiltonian 6, omega \
+constant\>\""}]}], "]"}]}], ",", " ", 
+      RowBox[{"Slider", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", "\[Omega]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "10"}], "}"}], ",", " ", 
+        RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "]"}]}], " ", 
+     "}"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "\[Omega]", "}"}], ",", 
+   RowBox[{"Column", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"Plot3D", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Im", "[", 
+            RowBox[{"-", 
+             SqrtBox[
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], "+", 
+               SuperscriptBox["\[Omega]", "2"], "+", 
+               RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+               SuperscriptBox["\[Gamma]", "2"]}]]}], "]"}], ",", " ", 
+           RowBox[{"Im", "[", 
+            SqrtBox[
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], "+", 
+              SuperscriptBox["\[Omega]", "2"], "+", 
+              RowBox[{"2", "I", "*", "\[Gamma]", "*", "\[Omega]"}], "-", 
+              SuperscriptBox["\[Gamma]", "2"]}]], "]"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Lambda]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Gamma]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"ImageSize", "->", "Medium"}], ",", " ", 
+         RowBox[{"PlotRange", "->", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", " ", "10"}], "}"}]}], ",", " ", 
+         RowBox[{"AxesLabel", "->", 
+          RowBox[{"{", 
+           RowBox[{"\[Lambda]", ",", "\[Gamma]", ",", "\"\<E\>\""}], "}"}]}], 
+         ",", " ", 
+         RowBox[{
+         "PlotLabel", "->", 
+          "\"\<Imaginary Plot of 4x4 Open System Hamiltonian 6, omega \
+constant\>\""}]}], "]"}]}], ",", " ", 
+      RowBox[{"Slider", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", "\[Omega]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "10"}], "}"}], ",", " ", 
+        RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "]"}]}], " ", 
+     "}"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.922291648117592*^9, 3.9222916660819263`*^9}, {
+  3.922291704972066*^9, 3.9222917206148868`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"5b7278b5-ded0-4d8e-992b-72513dfd708d"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`\[Omega]$$ = 0.52}, 
+  TagBox[GridBox[{
+     {
+      DynamicBox[ToBoxes[
+        Plot3D[{
+          
+          Re[-Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+             2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - \
+$CellContext`\[Gamma]^2]], 
+          Re[
+           
+           Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+            2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - $CellContext`\
+\[Gamma]^2]], 
+          
+          Im[-Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+             2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - \
+$CellContext`\[Gamma]^2]], 
+          Im[
+           
+           Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+            2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - $CellContext`\
+\[Gamma]^2]]}, {$CellContext`\[Lambda], -10, 10}, {$CellContext`\[Gamma], -10,
+           10}, ImageSize -> Medium, PlotRange -> {-10, 10}, 
+         AxesLabel -> {$CellContext`\[Lambda], $CellContext`\[Gamma], "E"}, 
+         PlotLabel -> 
+         "Combined Plot of 4x4 Open System Hamiltonian 6, omega constant"], 
+        StandardForm],
+       ImageSizeCache->{360., {168., 173.03680118683388`}}]},
+     {
+      InterpretationBox[
+       StyleBox[GridBox[{
+          {
+           SliderBox[Dynamic[$CellContext`\[Omega]$$], {0, 10},
+            Appearance->Automatic,
+            DefaultBaseStyle->"LabeledSlider"], 
+           InputFieldBox[Dynamic[$CellContext`\[Omega]$$],
+            Appearance->"Frameless",
+            ContinuousAction->True,
+            DefaultBaseStyle->"LabeledSlider",
+            FieldSize->{{5, 10}, {1, 2}},
+            ImageMargins->0]}
+         },
+         AutoDelete->False,
+         BaselinePosition->{{1, 1}, Axis},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.7]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}],
+        Deployed->True,
+        StripOnInput->False,
+        FontFamily:>CurrentValue["ControlsFontFamily"]],
+       LabeledSlider[
+        Dynamic[$CellContext`\[Omega]$$], {0, 10}]]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.922291668491374*^9, 3.9222917227951784`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"27b3ee77-1fb1-4348-8736-5e0233355660"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`\[Omega]$$ = 0.98}, 
+  TagBox[GridBox[{
+     {
+      DynamicBox[ToBoxes[
+        Plot3D[{
+          
+          Re[-Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+             2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - \
+$CellContext`\[Gamma]^2]], 
+          Re[
+           
+           Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+            2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - $CellContext`\
+\[Gamma]^2]]}, {$CellContext`\[Lambda], -10, 10}, {$CellContext`\[Gamma], -10,
+           10}, ImageSize -> Medium, PlotRange -> {-10, 10}, 
+         AxesLabel -> {$CellContext`\[Lambda], $CellContext`\[Gamma], "E"}, 
+         PlotLabel -> 
+         "Real Plot of 4x4 Open System Hamiltonian 6, omega constant"], 
+        StandardForm],
+       ImageSizeCache->{360., {176., 181.40523166475595`}}]},
+     {
+      InterpretationBox[
+       StyleBox[GridBox[{
+          {
+           SliderBox[Dynamic[$CellContext`\[Omega]$$], {0, 10},
+            Appearance->Automatic,
+            DefaultBaseStyle->"LabeledSlider"], 
+           InputFieldBox[Dynamic[$CellContext`\[Omega]$$],
+            Appearance->"Frameless",
+            ContinuousAction->True,
+            DefaultBaseStyle->"LabeledSlider",
+            FieldSize->{{5, 10}, {1, 2}},
+            ImageMargins->0]}
+         },
+         AutoDelete->False,
+         BaselinePosition->{{1, 1}, Axis},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.7]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}],
+        Deployed->True,
+        StripOnInput->False,
+        FontFamily:>CurrentValue["ControlsFontFamily"]],
+       LabeledSlider[
+        Dynamic[$CellContext`\[Omega]$$], {0, 10}]]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.922291668491374*^9, 3.922291723077461*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"bc8e9aaa-9661-4300-a7d9-71c25de6c068"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`\[Omega]$$ = 1.1}, 
+  TagBox[GridBox[{
+     {
+      DynamicBox[ToBoxes[
+        Plot3D[{
+          
+          Im[-Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+             2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - \
+$CellContext`\[Gamma]^2]], 
+          Im[
+           
+           Sqrt[$CellContext`\[Lambda]^2 + $CellContext`\[Omega]$$^2 + 
+            2 I $CellContext`\[Gamma] $CellContext`\[Omega]$$ - $CellContext`\
+\[Gamma]^2]]}, {$CellContext`\[Lambda], -10, 10}, {$CellContext`\[Gamma], -10,
+           10}, ImageSize -> Medium, PlotRange -> {-10, 10}, 
+         AxesLabel -> {$CellContext`\[Lambda], $CellContext`\[Gamma], "E"}, 
+         PlotLabel -> 
+         "Imaginary Plot of 4x4 Open System Hamiltonian 6, omega constant"], 
+        StandardForm],
+       ImageSizeCache->{360., {169., 173.92747577006395`}}]},
+     {
+      InterpretationBox[
+       StyleBox[GridBox[{
+          {
+           SliderBox[Dynamic[$CellContext`\[Omega]$$], {0, 10},
+            Appearance->Automatic,
+            DefaultBaseStyle->"LabeledSlider"], 
+           InputFieldBox[Dynamic[$CellContext`\[Omega]$$],
+            Appearance->"Frameless",
+            ContinuousAction->True,
+            DefaultBaseStyle->"LabeledSlider",
+            FieldSize->{{5, 10}, {1, 2}},
+            ImageMargins->0]}
+         },
+         AutoDelete->False,
+         BaselinePosition->{{1, 1}, Axis},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.7]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}],
+        Deployed->True,
+        StripOnInput->False,
+        FontFamily:>CurrentValue["ControlsFontFamily"]],
+       LabeledSlider[
+        Dynamic[$CellContext`\[Omega]$$], {0, 10}]]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.922291668491374*^9, 3.922291723339432*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"cc0755f4-388f-4814-99f9-100a5062d2e5"]
+}, Open  ]]
+},
+WindowSize->{730.3333333333334, 596.},
+WindowMargins->{{Automatic, 30.66666666666663}, {
+  Automatic, 24.333333333333332`}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (August 22, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d2c180c9-ce92-4a5f-ba0f-1dbbb3463476"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 7011, 174, 569, "Input",ExpressionUUID->"5b7278b5-ded0-4d8e-992b-72513dfd708d"],
+Cell[7594, 198, 2717, 67, 387, "Output",ExpressionUUID->"27b3ee77-1fb1-4348-8736-5e0233355660"],
+Cell[10314, 267, 2338, 58, 403, "Output",ExpressionUUID->"bc8e9aaa-9661-4300-a7d9-71c25de6c068"],
+Cell[12655, 327, 2342, 58, 411, "Output",ExpressionUUID->"cc0755f4-388f-4814-99f9-100a5062d2e5"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

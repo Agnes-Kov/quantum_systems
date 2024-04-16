@@ -1,0 +1,169 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5637,        159]
+NotebookOptionsPosition[      5105,        141]
+NotebookOutlinePosition[      5555,        158]
+CellTagsIndexPosition[      5512,        155]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "\[Lambda]", "}"}], ",", 
+   RowBox[{"Column", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{"{", " ", 
+          RowBox[{
+           RowBox[{"Re", "[", 
+            SqrtBox[
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], "-", 
+              SuperscriptBox["\[Gamma]", "2"]}]], "]"}], ",", 
+           RowBox[{"Re", "[", " ", 
+            RowBox[{"-", 
+             SqrtBox[
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], "-", 
+               SuperscriptBox["\[Gamma]", "2"]}]]}], "]"}], ",", " ", 
+           RowBox[{"Im", "[", 
+            SqrtBox[
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], "-", 
+              SuperscriptBox["\[Gamma]", "2"]}]], "]"}], ",", 
+           RowBox[{"Im", "[", " ", 
+            RowBox[{"-", 
+             SqrtBox[
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], "-", 
+               SuperscriptBox["\[Gamma]", "2"]}]]}], "]"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Gamma]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"ImageSize", "->", "Medium"}], ",", " ", 
+         RowBox[{"PlotRange", "->", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", " ", "10"}], "}"}]}], ",", " ", 
+         RowBox[{"AxesLabel", "->", 
+          RowBox[{"{", 
+           RowBox[{"\[Gamma]", ",", "\"\<E\>\""}], "}"}]}], ",", " ", 
+         RowBox[{
+         "PlotLabel", "->", 
+          "\"\<Plot of 2x2 Open System Hamiltonian 4 holding lambda \
+constant\>\""}]}], "]"}]}], ",", " ", 
+      RowBox[{"Slider", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", "\[Lambda]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "10"}], "}"}], ",", " ", 
+        RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "]"}]}], " ", 
+     "}"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.92229111289995*^9, 3.922291113480549*^9}, {
+  3.92229115095249*^9, 3.9222911517531347`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"ebbe52da-f2d1-4c32-9404-35bfe203e83a"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`\[Lambda]$$ = 3.02}, 
+  TagBox[GridBox[{
+     {
+      DynamicBox[ToBoxes[
+        Plot[{
+          Re[
+           Sqrt[$CellContext`\[Lambda]$$^2 - $CellContext`\[Gamma]^2]], 
+          Re[-Sqrt[$CellContext`\[Lambda]$$^2 - $CellContext`\[Gamma]^2]], 
+          Im[
+           Sqrt[$CellContext`\[Lambda]$$^2 - $CellContext`\[Gamma]^2]], 
+          
+          Im[-Sqrt[$CellContext`\[Lambda]$$^2 - $CellContext`\[Gamma]^2]]}, \
+{$CellContext`\[Gamma], -10, 10}, ImageSize -> Medium, PlotRange -> {-10, 10},
+          AxesLabel -> {$CellContext`\[Gamma], "E"}, PlotLabel -> 
+         "Plot of 2x2 Open System Hamiltonian 4 holding lambda constant"], 
+        StandardForm],
+       ImageSizeCache->{360., {123., 127.4878303700921}}]},
+     {
+      InterpretationBox[
+       StyleBox[GridBox[{
+          {
+           SliderBox[Dynamic[$CellContext`\[Lambda]$$], {0, 10},
+            Appearance->Automatic,
+            DefaultBaseStyle->"LabeledSlider"], 
+           InputFieldBox[Dynamic[$CellContext`\[Lambda]$$],
+            Appearance->"Frameless",
+            ContinuousAction->True,
+            DefaultBaseStyle->"LabeledSlider",
+            FieldSize->{{5, 10}, {1, 2}},
+            ImageMargins->0]}
+         },
+         AutoDelete->False,
+         BaselinePosition->{{1, 1}, Axis},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.7]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}],
+        Deployed->True,
+        StripOnInput->False,
+        FontFamily:>CurrentValue["ControlsFontFamily"]],
+       LabeledSlider[
+        Dynamic[$CellContext`\[Lambda]$$], {0, 10}]]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{{3.922291104354105*^9, 3.9222911180389175`*^9}, 
+   3.9222911535257826`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"c54ddf80-a711-4676-89a8-bdc2ec653780"]
+}, Open  ]]
+},
+WindowSize->{730.3333333333334, 596.},
+WindowMargins->{{Automatic, 25.33333333333337}, {
+  Automatic, 23.333333333333332`}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (August 22, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ad15e98a-a16f-4751-b0cd-d29fa96d5090"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2248, 58, 167, "Input",ExpressionUUID->"ebbe52da-f2d1-4c32-9404-35bfe203e83a"],
+Cell[2831, 82, 2258, 56, 319, "Output",ExpressionUUID->"c54ddf80-a711-4676-89a8-bdc2ec653780"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
