@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5382,        148]
-NotebookOptionsPosition[      4894,        133]
-NotebookOutlinePosition[      5324,        149]
-CellTagsIndexPosition[      5281,        146]
+NotebookDataLength[      9831,        263]
+NotebookOptionsPosition[      9115,        244]
+NotebookOutlinePosition[      9557,        260]
+CellTagsIndexPosition[      9514,        257]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -70,7 +70,8 @@ Cell[BoxData[
          RowBox[{"0", ",", "10"}], "}"}], ",", " ", 
         RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "]"}]}], " ", 
      "}"}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.92229126205692*^9, 3.9222913165361595`*^9}},
+ CellChangeTimes->{{3.92229126205692*^9, 3.9222913165361595`*^9}, {
+  3.9227538849509535`*^9, 3.9227539026911707`*^9}},
  CellLabel->"In[8]:=",ExpressionUUID->"6ed7ed71-318c-4bb0-a8f1-c75c6f2500c4"],
 
 Cell[BoxData[
@@ -91,7 +92,7 @@ Cell[BoxData[
          PlotLabel -> 
          "Plot of 4x4 Open System Hamiltonian 5 holding omega constant"], 
         StandardForm],
-       ImageSizeCache->{360., {185., 189.86328125}}]},
+       ImageSizeCache->{360., {176., 181.40523166475595`}}]},
      {
       InterpretationBox[
        StyleBox[GridBox[{
@@ -129,10 +130,120 @@ Cell[BoxData[
    "Column"],
   DynamicModuleValues:>{}]], "Input",
  CellChangeTimes->{3.922291423411248*^9},
- CellLabel->"",ExpressionUUID->"d74ab252-0dae-4650-a278-b019096cf1b1"]
+ CellLabel->"",ExpressionUUID->"d74ab252-0dae-4650-a278-b019096cf1b1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "\[Omega]", "}"}], ",", 
+   RowBox[{"Column", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"Plot3D", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Re", "[", 
+            RowBox[{
+             RowBox[{"-", "\[Omega]"}], "-", 
+             RowBox[{"I", "*", "\[Gamma]"}]}], "]"}], ",", "  ", 
+           RowBox[{"Re", "[", 
+            RowBox[{"\[Omega]", "+", 
+             RowBox[{"I", "*", "\[Gamma]"}]}], "]"}], ",", " ", "\[Lambda]", 
+           ",", " ", 
+           RowBox[{"-", "\[Lambda]"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Lambda]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\[Gamma]", ",", " ", 
+           RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+         RowBox[{"ImageSize", "->", "Medium"}], ",", " ", 
+         RowBox[{"PlotRange", "->", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", " ", "10"}], "}"}]}], ",", " ", 
+         RowBox[{"AxesLabel", "->", 
+          RowBox[{"{", 
+           RowBox[{"\[Lambda]", ",", "\[Gamma]", ",", "\"\<E\>\""}], "}"}]}], 
+         ",", " ", 
+         RowBox[{
+         "PlotLabel", "->", 
+          "\"\<Plot of 4x4 Open System Hamiltonian 5 holding omega constant\>\
+\""}]}], "]"}]}], ",", " ", 
+      RowBox[{"Slider", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "@", "\[Omega]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "10"}], "}"}], ",", " ", 
+        RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "]"}]}], " ", 
+     "}"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.922753808027022*^9, 3.9227538375130863`*^9}, {
+  3.922753892994444*^9, 3.9227538934919033`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"6d92ab50-08ac-42ea-ae66-767eff12721c"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`\[Omega]$$ = 2.96}, 
+  TagBox[GridBox[{
+     {
+      DynamicBox[ToBoxes[
+        Plot3D[{
+          Re[-$CellContext`\[Omega]$$ - I $CellContext`\[Gamma]], 
+          
+          Re[$CellContext`\[Omega]$$ + 
+           I $CellContext`\[Gamma]], $CellContext`\[Lambda], -$CellContext`\
+\[Lambda]}, {$CellContext`\[Lambda], -10, 10}, {$CellContext`\[Gamma], -10, 
+          10}, ImageSize -> Medium, PlotRange -> {-10, 10}, 
+         AxesLabel -> {$CellContext`\[Lambda], $CellContext`\[Gamma], "E"}, 
+         PlotLabel -> 
+         "Plot of 4x4 Open System Hamiltonian 5 holding omega constant"], 
+        StandardForm],
+       ImageSizeCache->{360., {176., 181.40523166475595`}}]},
+     {
+      InterpretationBox[
+       StyleBox[GridBox[{
+          {
+           SliderBox[Dynamic[$CellContext`\[Omega]$$], {0, 10},
+            Appearance->Automatic,
+            DefaultBaseStyle->"LabeledSlider"], 
+           InputFieldBox[Dynamic[$CellContext`\[Omega]$$],
+            Appearance->"Frameless",
+            ContinuousAction->True,
+            DefaultBaseStyle->"LabeledSlider",
+            FieldSize->{{5, 10}, {1, 2}},
+            ImageMargins->0]}
+         },
+         AutoDelete->False,
+         BaselinePosition->{{1, 1}, Axis},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.7]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}],
+        Deployed->True,
+        StripOnInput->False,
+        FontFamily:>CurrentValue["ControlsFontFamily"]],
+       LabeledSlider[
+        Dynamic[$CellContext`\[Omega]$$], {0, 10}]]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{{3.9227538198560033`*^9, 3.9227538397890387`*^9}},
+ CellLabel->"Out[2]=",ExpressionUUID->"6c9022a4-2a96-47e3-9f62-27ecbb6450b8"]
+}, Open  ]]
 },
-WindowSize->{730.3333333333334, 596.},
-WindowMargins->{{Automatic, 39.33333333333337}, {Automatic, 12}},
+WindowSize->{730.3333333333334, 595.6666666666666},
+WindowMargins->{{Automatic, 39.33333333333337}, {Automatic, 0}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (August 22, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"8c951885-1ee2-4b90-83a2-af2c19b2688d"
@@ -148,11 +259,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2101, 53, 143, "Input",ExpressionUUID->"6ed7ed71-318c-4bb0-a8f1-c75c6f2500c4"],
-Cell[2662, 75, 2228, 56, 416, InheritFromParent,ExpressionUUID->"d74ab252-0dae-4650-a278-b019096cf1b1"]
+Cell[558, 20, 2154, 54, 143, "Input",ExpressionUUID->"6ed7ed71-318c-4bb0-a8f1-c75c6f2500c4"],
+Cell[2715, 76, 2235, 56, 399, "Input",ExpressionUUID->"d74ab252-0dae-4650-a278-b019096cf1b1"],
+Cell[CellGroupData[{
+Cell[4975, 136, 1942, 49, 143, "Input",ExpressionUUID->"6d92ab50-08ac-42ea-ae66-767eff12721c"],
+Cell[6920, 187, 2179, 54, 403, "Output",ExpressionUUID->"6c9022a4-2a96-47e3-9f62-27ecbb6450b8"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
